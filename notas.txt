@@ -1,0 +1,31 @@
+Instalação de pacotes a partir de repositorios para o windows.
+
+1 - Instalar o python conforme nos videos não esquecendo de adicionar o python no path;
+
+2 - Criar uma pasta e uma venv do projeto com os seguintes comandos (use os nomes da aula para não se perder no exercicio depois):
+
+cd Downloads
+mkdir python_gis
+cd python_gis
+py -3.9 -m venv .venv (para o caso da instalação do python 3.9)
+
+3- Ir até no site https://github.com/cgohlke/geospatial-wheels/releases
+
+Fazer download do gdal, pyproj, fiona, shapely, geopandas e instalar com a venv ativada indicando o caminho do arquivo que foi realizado o download no pip na ordem abaixo:
+
+ativar a venv
+
+.venv\Scripts\activate.bat
+
+
+Instalando pacotes (atenção para colocar o caminho correto do arquivo onde você realizou o download):
+
+pip install meucaminhocompletoateDownloads/GDAL-3.8.4-cp39-cp39-win_amd64.whl
+
+pip install meucaminhocompletoateDownloads/pyproj-3.6.1-cp39-cp39-win_amd64.whl
+
+pip install meucaminhocompletoateDownloads/fiona-1.9.5-cp39-cp39-win_amd64.whl
+
+pip install meucaminhocompletoateDownloads/shapely-2.0.3-cp39-cp39-win_amd64.whl
+
+pip install geopandas
